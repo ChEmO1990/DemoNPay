@@ -1,0 +1,50 @@
+<resources>
+
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="AppTheme.Base">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- colorPrimary is used, for instance, for the default ActionBar
+             (but not Toolbar) background.
+              We specify the same color for the toolbar_actionbar_with_headerbar background in
+              toolbar_actionbar_with_headerbar_actionbar_with_headerbar.xml.. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+        <!-- colorPrimaryDark is used for the status bar (with the
+             battery, clock, etc). -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+
+        <!-- colorAccent is used as the default value for
+             colorControlActivated which is used to tint widgets. -->
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="ChemoThemeToolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:fitsSystemWindows">true</item>
+    </style>
+
+    <style name="PopupChemoToolbar" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="ItemCatalog" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/item_text_comment</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+</resources>
