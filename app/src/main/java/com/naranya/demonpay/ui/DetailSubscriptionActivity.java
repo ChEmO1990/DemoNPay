@@ -85,6 +85,6 @@ public class DetailSubscriptionActivity extends BaseActivity {
         };
 
         npay.setOnServiceInformationReceivedListener(listenInfo);
-        npay.getServiceInformation().getServiceInformation(Querys.getIDSubscription(id_service), id_service);
+        npay.getServiceInformation().getServiceInformation(Querys.getIDSubscription(this, id_service), id_service);
     }
 }

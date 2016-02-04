@@ -6,13 +6,16 @@ import android.support.v4.view.ViewPager;
 
 import com.naranya.demonpay.R;
 import com.naranya.demonpay.adapters.CustomPagerAdapter;
+import com.naranya.demonpay.db.DataBaseHelper;
+
+import java.io.IOException;
 
 /**
  * Created by anselmo on 2/3/16.
  */
 public class HomeActivity extends BaseActivity {
-    CustomPagerAdapter mCustomPagerAdapter;
-    ViewPager mViewPager;
+    private CustomPagerAdapter mCustomPagerAdapter;
+    private ViewPager mViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

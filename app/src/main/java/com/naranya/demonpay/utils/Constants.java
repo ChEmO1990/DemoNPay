@@ -9,5 +9,5 @@ public class Constants {
 
     //Constants Database
     public static final String DB_PATH_DATABASE = "/data/data/com.naranya.demonpay/databases/";
-    public static final String DB_NAME_DATABASE = "npay_demo.sqlite";
+    public static final String DB_NAME_DATABASE = "npay.sqlite";
 }

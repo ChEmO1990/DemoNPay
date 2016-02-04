@@ -94,7 +94,7 @@ public class ServiceDetailActivity extends BaseActivity implements OnServiceDeta
                     Log.v("Service ID", result.getIDService());
                     Log.v("Cancelled", result.getCancelled());
                     Log.v("Status", result.getStatus());
-                    Querys.addSubscription(result.getIdSubscription(), result.getIDService());
+                    Querys.addSubscription(ServiceDetailActivity.this, result.getIdSubscription(), result.getIDService());
                     Toast toast = Toast.makeText(getApplicationContext(), "ok", Toast.LENGTH_LONG);
 
                 } catch(Exception e){
@@ -201,7 +201,7 @@ public class ServiceDetailActivity extends BaseActivity implements OnServiceDeta
     }
 
     @OnClick(R.id.btnCancel) void cancelSubscription() {
-        npay.CancelSubscription().CancelSubscription(Querys.getIDSubscription(id_service), Constants.KEYWORD, id_service);
+        npay.CancelSubscription().CancelSubscription(Querys.getIDSubscription(this, id_service), Constants.KEYWORD, id_service);
     }
 
     @OnClick(R.id.btnInfo) void infoSubscription() {
