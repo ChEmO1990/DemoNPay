@@ -13,6 +13,7 @@ import com.naranya.demonpay.R;
 import com.naranya.demonpay.ui.ServiceDetailActivity;
 import com.vstechlab.easyfonts.EasyFonts;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 import io.npay.hub.services.ServiceItem;
@@ -49,12 +50,14 @@ public class ServiceNPayAdapter extends RecyclerView.Adapter<ServiceNPayAdapter.
         // Get the data model based on position
         ServiceItem service = items.get(position);
 
+
+        DecimalFormat f = new DecimalFormat("#.00");
         //set Date
         viewHolder.name.setText( context.getString(R.string.service_name) + " " + String.valueOf(service.getName()));
         viewHolder.description.setText( context.getString(R.string.service_description) + " " + String.valueOf(service.getDescription()));
         viewHolder.country.setText( context.getString(R.string.service_country) + " " + String.valueOf(service.getHubDetails().getCountry()));
         viewHolder.carrier.setText( context.getString(R.string.service_carrier) + " " + String.valueOf(service.getHubDetails().getCarrier()));
-        viewHolder.price.setText( context.getString(R.string.service_price) + " " + String.valueOf(service.getHubDetails().getAmount()));
+        viewHolder.price.setText( context.getString(R.string.service_price) + " " + f.format( service.getHubDetails().getAmount()));
     }
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
