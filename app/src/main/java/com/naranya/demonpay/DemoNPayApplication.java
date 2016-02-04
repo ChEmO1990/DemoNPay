@@ -19,7 +19,7 @@ public class DemoNPayApplication extends Application {
         db_helper = new DataBaseHelper(this);
 
         try {
-            db_helper.createDataBase(this);
+            db_helper.createDataBase();
         } catch (IOException e) {
             e.printStackTrace();
         }

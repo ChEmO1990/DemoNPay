@@ -54,7 +54,7 @@ public class ServiceNPayAdapter extends RecyclerView.Adapter<ServiceNPayAdapter.
         viewHolder.description.setText( context.getString(R.string.service_description) + " " + String.valueOf(service.getDescription()));
         viewHolder.country.setText( context.getString(R.string.service_country) + " " + String.valueOf(service.getHubDetails().getCountry()));
         viewHolder.carrier.setText( context.getString(R.string.service_carrier) + " " + String.valueOf(service.getHubDetails().getCarrier()));
-        viewHolder.price.setText( context.getString(R.string.service_price) + " " + String.valueOf(service.getHubDetails().getSubTotal()));
+        viewHolder.price.setText( context.getString(R.string.service_price) + " " + String.valueOf(service.getHubDetails().getAmount()));
     }
 
     class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
@@ -72,7 +72,7 @@ public class ServiceNPayAdapter extends RecyclerView.Adapter<ServiceNPayAdapter.
             country     = (TextView) itemView.findViewById(R.id.item_country);
             carrier     = (TextView) itemView.findViewById(R.id.item_carrier);
             price       = (TextView) itemView.findViewById(R.id.item_price);
-
+            
             name.setTypeface(EasyFonts.robotoLight(context));
             description.setTypeface(EasyFonts.robotoLight(context));
             country.setTypeface(EasyFonts.robotoLight(context));

@@ -14,4 +14,10 @@
     <string name="activity_subscription">Estatus actual</string>
     <string name="activity_home">Lista de servicios</string>
 
+
+    <string name="id_item">ID ITEM:</string>
+    <string name="sku_item">SKU:</string>
+    <string name="type_item">Tipo: </string>
+    <string name="name_item">Nombre:</string>
+
 </resources>

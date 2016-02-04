@@ -5,10 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-
-    <uses-feature
-        android:name="android.hardware.telephony"
-        android:required="false" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false" />
 
     <application
         android:name=".DemoNPayApplication"
@@ -17,6 +16,9 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
+
+        <!-- [3/2/16 18:45] Jaalam Clímaco (jaalam.climaco@naranya.com): d8bd9ed4e297cf830ce2ce0f48c7385d762336f67ab79fb1702b315bb06ac62e !-->
+
         <meta-data
             android:name="sdk_key"
             android:value="c4c7b727693b86bde5d6778db0a0fe3f9baf7815da49cede58697a9447bbc29d" >
@@ -29,9 +31,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ui.ServiceDetailActivity" />
         <activity android:name=".ui.DetailSubscriptionActivity" >
         </activity>
+
+        <receiver android:name="io.npay.hub_pin.HubDialogUserData$NPayPinSMSReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
