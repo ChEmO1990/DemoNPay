@@ -17,15 +17,19 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
 
-        <activity android:name=".ui.HomeActivity" >
+        <activity android:name=".ui.HomeActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.ServiceDetailActivity" />
-        <activity android:name=".ui.DetailSubscriptionActivity"/>
+        <activity android:name=".ui.ServiceDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".ui.DetailSubscriptionActivity"
+            android:screenOrientation="portrait"/>
 
         <receiver android:name="io.npay.hub_pin.HubDialogUserData$NPayPinSMSReceiver">
             <intent-filter>
