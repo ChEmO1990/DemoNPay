@@ -20,4 +20,7 @@
     <string name="type_item">Tipo: </string>
     <string name="name_item">Nombre:</string>
 
+
+    <string name="service_subs">Servicio Suscripciones</string>
+    <string name="service_catalog">Servicio Catalogos</string>
 </resources>

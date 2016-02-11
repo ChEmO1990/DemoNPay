@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DemoNPay</string>
+    <string name="action_github">GitHub Repo</string>
+
+    <string name="service_name">Nome:</string>
+    <string name="service_description">Descrição:</string>
+    <string name="service_country">País:</string>
+    <string name="service_carrier">Carrier:</string>
+    <string name="service_price">Preço:</string>
+    <string name="txt_options">Mostrar opções</string>
+    <string name="txt_suscribir">Subscrever</string>
+    <string name="txt_cancel">Cancelar</string>
+    <string name="txt_info">Verificar Info</string>
+    <string name="activity_subscription">Status atual</string>
+    <string name="activity_home">Lista de serviços</string>
+
+
+    <string name="id_item">ID ITEM:</string>
+    <string name="sku_item">SKU:</string>
+    <string name="type_item">Tipo: </string>
+    <string name="name_item">Nome:</string>
+
+
+    <string name="service_subs">Assinaturas de Serviços</string>
+    <string name="service_catalog">Catálogos de serviços</string>
+
+</resources>
