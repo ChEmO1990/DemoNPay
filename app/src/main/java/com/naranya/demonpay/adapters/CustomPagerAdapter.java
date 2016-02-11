@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.naranya.demonpay.R;
 import com.naranya.demonpay.ui.fragments.CatalogFragment;
 import com.naranya.demonpay.ui.fragments.ServiceFragment;
 
@@ -50,8 +51,8 @@ public class CustomPagerAdapter extends FragmentPagerAdapter {
         String title = "";
 
         switch ( position ) {
-            case 0: title = "Servicio Suscripciones"; break;
-            case 1: title = "Servicio Catalogos"; break;
+            case 0: title = mContext.getString(R.string.service_subs); break;
+            case 1: title = mContext.getString(R.string.service_catalog); break;
         }
 
         return title;
