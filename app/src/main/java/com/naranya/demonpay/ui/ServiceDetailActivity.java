@@ -20,6 +20,7 @@ import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import io.npay.activity.NPay;
+import io.npay.custom_view.NPayDialogTexts;
 import io.npay.hub.language.LanguageHelper;
 import io.npay.hub.service_detail.OnServiceDetailReceivedListener;
 import io.npay.hub.service_detail.ServiceDetailItem;
@@ -145,7 +146,7 @@ public class ServiceDetailActivity extends BaseActivity implements OnServiceDeta
                     new AlertDialog.Builder(ServiceDetailActivity.this)
                             .setTitle("Información ")
                             .setMessage(information)
-                            .setPositiveButton(new LanguageHelper().getOk(), new DialogInterface.OnClickListener() {
+                            .setPositiveButton(new NPayDialogTexts().getDialogText("btn_accept"), new DialogInterface.OnClickListener() {
                                 public void onClick(DialogInterface dialog, int which) {
                                     dialog.dismiss();
                                 }
